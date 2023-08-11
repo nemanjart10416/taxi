@@ -1,0 +1,123 @@
+@import (inline) "bootstrap.min.css";
+
+@color1: #f3d262;
+@color2: #18150a;
+
+.closed {
+    height: 0;
+    overflow: hidden;
+}
+
+.marked-text {
+    color: @color1;
+
+    &:hover {
+        color: #d79a00;
+
+    }
+}
+
+.marked-text-2 {
+    color: brown;
+}
+
+.marked-text-3 {
+    color: #0ce10c;
+}
+
+.booking-form {
+    input {
+        color-scheme: dark;
+    }
+
+    .form_1 {
+        background-color: white;
+        border: 1px solid @color2;
+
+        h2, p.h2, p.h3 {
+            color: @color2 !important;
+            text-align: center;
+        }
+
+        b {
+            color: @color2;
+        }
+
+        label {
+            color: @color2;
+        }
+
+        input {
+            background-color: #d0cdcd;
+            color: @color2;
+
+            border: 1px solid @color2;
+            border-radius: 0;
+
+            &::placeholder {
+                color: @color2;
+            }
+        }
+
+        input {
+            &.form-check-input {
+                border: 2px solid @color2;
+                border-radius: 5px;
+            }
+        }
+
+        select {
+            background-color: #d0cdcd;
+            color: @color2;
+
+            border: 1px solid @color2;
+            border-radius: 0;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        textarea {
+            background-color: #d0cdcd;
+            color: @color2;
+
+            border: 1px solid @color2;
+            border-radius: 0;
+
+            &::placeholder {
+                color: @color2;
+            }
+        }
+
+        button {
+            background-color: green;
+            color: white;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .form_2 {
+        padding-left: 25px;
+
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        .form_2 {
+            h2 {
+                margin-top: 30px !important;
+            }
+        }
+
+    }
+
+    * {
+        font-size: 16px;
+    }
+}
+
+

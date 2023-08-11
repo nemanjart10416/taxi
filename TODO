@@ -1,0 +1,38 @@
+prevod na srpski
+
+
+
+
+
+
+
+
+
+
+
+
+
+koferi su veci i manji i na osnovu kofera se bira vozilo
+imamo 2 polja za broj srednjih i velikih kofera
+
+
+
+izbaciti broj osoba => OK!
+izbaciti decija sedista => OK!
+imejl nije obavezno polje => OK!
+samo adresa jedno polje => OK!
+izbaciti dodatnu adresu => OK!
+izbaciti povratnu voznju => OK!
+
+izbacen_broj_leta
+nacin_placanja_izbacen
+------------------------------------------
+nova forma => OK!
+
+
+ime OK!
+broj telefona OK!
+adresa OK!
+vreme - do 5min ili rezervisi OK!
+email? pitati za email potrvrudi  OK!
+posalji OK!

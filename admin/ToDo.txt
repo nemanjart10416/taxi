@@ -1,0 +1,101 @@
+structure:
+    administrator:
+        -id
+        -username
+        -password
+        -salt
+        -name
+        -last_name
+        -email
+        -mobile
+        -joined
+        -last_login
+        -status
+
+    driver:
+        -id
+        -username
+        -password
+        -salt
+        -name
+        -last_name
+        -email
+        -mobile
+        -joined
+        -last_login
+        -status (active,unactive)
+
+
+rides:
+    id
+    name
+    email
+    mobile
+    comment
+
+    ride_time
+    booked_time
+
+    from_to(from,to)
+
+    number_of_people
+    number_of_suitcases
+    number_of_child_seats
+
+    status(new_ride,assigned,accepted,fail,success,deleted)
+        -prvo se bira vozac pa onda voznja
+
+    //preko street mogu doci do district i city
+    streets_id
+    street_number
+
+    payment
+
+    distance???
+    price
+
+    return_ride
+
+    aa1(aditional address)
+    aa2(aditional address)
+
+    driver_id
+    admin_id
+
+
+ToDo:
+    -data validation
+        -data length
+        -unizue email and username
+        -forbiden characters
+    -admin can change driver status(active/unactive)
+    -search for every entity and page
+    -sort for every entity and page
+    -check duplicate cities when creating, updating
+    -when deleting citie, delete districts and streets
+    -check if user_input() used everiwhere where it needs to be used
+    -stao kod stranice view-districts.php !!!
+    -put htmlentities everiwhere where it needs to be
+    -payment types to add to admin
+    -da li je id veci od nule
+    -@$csrfToken = $_POST["token"];
+    -ride must return id
+    -all data if isset and then rest of checks
+    -additional address(nema house number)
+    -mozda izbaciti tri vrste sedista za decu i dve vrste kofera
+    -kod komunikacije sa bazom svugde try catch
+
+    -google calendar povezati
+    -enviroment variables
+    
+
+    -provera da li vozac vec ima voznju u tom trenutku!!!
+
+    -recalculate price function after changing ride values
+
+
+    -https://127.0.0.1/0_admin_panel/admin/update-ride.php?change=47
+        -date and time
+
+-for price maybe not to store it in database instead have function that will return price
+ but then admin can't change price
